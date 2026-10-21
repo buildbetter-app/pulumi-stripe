@@ -33,7 +33,7 @@ runs:
       if: inputs.sdk == 'nodejs' || inputs.sdk == 'all'
       uses: actions/setup-node@v3
       with:
-        node-version: ${{ env.NODEVERSION }}
+        node-version: "22.23.4"
         registry-url: https://registry.npmjs.org
     - name: Download nodejs SDK
       id: download
